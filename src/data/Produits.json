@@ -1,0 +1,32 @@
+[
+    {
+        "id": "prd0001",
+        "nom": "Robe rose",
+        "prix": 12.99 
+    },
+    {
+        "id": "prd0002",
+        "nom": "Robe à pois",
+        "prix": 11.99
+    },
+    {
+        "id": "prd0003",
+        "nom": "Robe longue beige",
+        "prix": 15.99
+    },
+    {
+        "id": "prd0004",
+        "nom": "Chandail blanc manche longue",
+        "prix": 10.99
+    },
+    {
+        "id": "prd0005",
+        "nom": "Chandail gris manche longue",
+        "prix": 10.99
+    },
+    {
+        "id": "prd0006",
+        "nom": "Chandail bleu marin manche longue",
+        "prix": 12.99
+    }
+]
