@@ -1,4 +1,5 @@
-import './Produit.css';
+import BtnAjoutPanier from './BtnAjoutPanier';
+import './Produit.scss';
 
 export default function Produit(props) {
     return(
@@ -9,7 +10,7 @@ export default function Produit(props) {
             <div className="info">
                 <h3>{props.nom}</h3>
                 <p className="prix">{props.prix} $CA</p>
-                <button>Ajouter au panier</button>
+                <BtnAjoutPanier />
             </div>
         </li>
     );
