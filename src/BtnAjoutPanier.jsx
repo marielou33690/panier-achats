@@ -1,5 +1,6 @@
 import "./BtnAjoutPanier.scss";
 import Badge from '@material-ui/core/Badge';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { useState } from "react";
 
 export default function BtnAjoutPanier(props) {
@@ -7,15 +8,18 @@ export default function BtnAjoutPanier(props) {
 
     // etat du badge du bouton
     const [btnQte, setBtnQte] = useState(0);
+    const [btnTexte, setBtnTexte] = useState('Ajouter au panier');
     return (
-        <Badge badgeContent={0} color="secondary">
+        <Badge badgeContent={btnQte} color="secondary">
             <button 
-            onClick={() => { 
+            onClick={(event) => { 
                 props.onClick();
-                setBtnQte(btnQte+1);}
-            } 
+                setBtnQte(btnQte+1);
+                setBtnTexte(<AddCircleIcon/>);
+                event.target.classList.add('rouge');
+            }} 
                 className="BtnAjoutPanier">
-                Ajouter au panier
+                {btnTexte}
             </button>
         </Badge >
     );
